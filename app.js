@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     
     const nombre = req.query.nombre; 
     if (nombre === '' || nombre === undefined) {
-        return res.send(`<h1>Hola Desconocido!</h1>`);
+        return res.send(`<h1>Hola desconocido!</h1>`);
     }
     else {
         return res.send(`<h1>Hola ${nombre}!</h1>`);
